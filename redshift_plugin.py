@@ -40,6 +40,6 @@ if __name__ == '__main__':
         import logging
         logging.basicConfig(level=logging.INFO)
 
-    plugin = CloudwatchPlugin(RedshiftCloudwatchMetrics, '', 'boundary-plugin-aws-redshift-python-status')
+    plugin = CloudwatchPlugin(RedshiftCloudwatchMetrics, 'NEM_', 'boundary-plugin-aws-redshift-python-status')
     plugin.main()
 
