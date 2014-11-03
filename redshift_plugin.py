@@ -25,13 +25,13 @@ class RedshiftCloudwatchMetrics(CloudwatchMetrics):
 
     def get_metric_list(self):
         return (
-            ('CPUUtilization', 'Average', 'AWS_REDSHIFT_CPU_UTILIZATION'),
+            ('CPUUtilization', 'Average', 'AWS_REDSHIFT_CPU_UTILIZATION', 0.01),
             ('DatabaseConnections', 'Average', 'AWS_REDSHIFT_DATABASE_CONNECTIONS'),
             ('HealthStatus', 'Average', 'AWS_REDSHIFT_HEALTH_STATUS'),
             ('MaintenanceMode', 'Average', 'AWS_REDSHIFT_MAINTENANCE_MODE'),
             ('NetworkReceiveThroughput', 'Average', 'AWS_REDSHIFT_NETWORK_RECEIVE_THROUGHPUT'),
             ('NetworkTransmitThroughput', 'Average', 'AWS_REDSHIFT_NETWORK_TRANSMIT_THROUGHPUT'),
-            ('PercentageDiskSpaceUsed', 'Average', 'AWS_REDSHIFT_PERCENTAGE_DISK_SPACE_USED'),
+            ('PercentageDiskSpaceUsed', 'Average', 'AWS_REDSHIFT_PERCENTAGE_DISK_SPACE_USED', 0.01),
         )
 
 
